@@ -14,8 +14,9 @@
   </head>
 
   <body>
-    <div id="VerificationDiv">
+    <div id="verificationDiv">
       <h1>Verify Your Number</h1>
+      <p>We've sent a 6-digit code to your phone number...</p>
       <form action="" method="post">
         <div class="digitsDiv">
           <input
@@ -62,14 +63,16 @@
             placeholder="*"
           />
         </div>
-        <input
-          type="button"
-          value="Resend Code"
-          class="button"
-          disabledBtn="true"
-          disabled
-          disabled-Btn="true"
-        />
+        <div id="buttonDiv">
+          <input
+            type="button"
+            value="Resend Code"
+            class="button"
+            disabledBtn="true"
+            disabled
+            disabled-Btn="true"
+          />
+        </div>
       </form>
     </div>
     <script src="verification.js"></script>
