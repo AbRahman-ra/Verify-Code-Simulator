@@ -1,13 +1,13 @@
 const DIGITS = document.getElementsByClassName("digits");
-const ONLYNUMS = /^\D+$/;
 let secLeft = 10;
 let timerOnScr = document.createElement("span");
 let resendBtn = document.getElementsByClassName("button")[0];
+let verificationDiv = document.getElementById("verificationDiv");
 
 // Event 1: Window initialization
-window.onload = () => {
+window.addEventListener("DOMContentLoaded", function () {
   DIGITS[0].focus();
-};
+});
 
 // Event 2: Accept Numeric Values only
 for (let i = 0; i < DIGITS.length; i++) {
@@ -68,7 +68,7 @@ for (let i = 0; i < DIGITS.length; i++) {
 
 // Event 5: Timer for resending code
 timerOnScr.textContent = `Wait ${secLeft} Seconds`;
-resendBtn.after(timerOnScr);
+verificationDiv.appendChild(timerOnScr);
 
 window.onload = function () {
   let timer2Resend = setInterval(function () {
