@@ -1,3 +1,29 @@
+// Create cells here for dynamic
+const NUMOFCELLS = 6; // change when necessary ONLY
+let verificationForm = document.getElementById("verificationForm");
+
+// User Message SetUp
+const h1 = document.querySelector("h1");
+let pUnderH1 = document.createElement("p");
+pUnderH1.innerHTML =
+  TEXTABOVECELLS = `We've sent a ${NUMOFCELLS}-digit code to your phone number...`;
+h1.after(pUnderH1);
+
+//Creating cells
+let digitsDiv = document.querySelector(".digitsDiv");
+for (let j = 0; j < NUMOFCELLS; j++) {
+  let cell = document.createElement("input");
+  cell.setAttribute("type", "text");
+  cell.setAttribute("class", "digits");
+  cell.setAttribute("id", `digit${j + 1}`);
+  cell.setAttribute("placeholder", "*");
+  cell.setAttribute("required", "required");
+  if (j === NUMOFCELLS - 1) {
+    cell.setAttribute("maxlength", 1);
+  }
+  digitsDiv.append(cell);
+}
+
 const DIGITS = document.getElementsByClassName("digits");
 let secLeft = 10;
 let timerOnScr = document.createElement("span");

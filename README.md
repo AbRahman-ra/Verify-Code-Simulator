@@ -27,5 +27,6 @@
 
 ## Improvements (As much as I can)
 
+- (New), improved JS code to create number of cells based on input in line 2
 - Added a visual style for filled and unfilled cells
-- Added a counting timer for resending (Only for aesthetic purpose, not working so far).
+- Added a counting timer for resending (Only for aesthetic purpose, not working so far)

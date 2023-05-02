@@ -25,15 +25,20 @@ p {
   font-weight: 100;
 }
 
+#SPANNUMCELLS {
+  display: inline;
+  font-size: 4vw;
+  font-weight: 100;
+}
+
 /* Cells */
+
 .digitsDiv {
-  display: flex;
+  display: inline-block;
   justify-content: center;
 }
 
 .digits {
-  display: flex;
-  justify-content: center;
   max-width: 10vw;
   height: 15vw;
   font-size: 12vw;
